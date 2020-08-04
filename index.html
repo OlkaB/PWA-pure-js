@@ -44,46 +44,7 @@
 
   <!-- recipes -->
   <div class="recipes container grey-text text-darken-1">
-    <div class="card-panel recipe white row">
-      <img src="/img/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/img/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/img/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <img src="/img/dish.png" alt="recipe thumb">
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
+    <h6 class="center">Ninja Recipes</h6>
   </div>
 
   <div class="center">
@@ -106,12 +67,32 @@
         <label for="ingredients">Ingredients</label>
       </div>
       <div class="input-field center">
-        <button class="btn-small">Add</button>
+        <button class="btn-small" type="submit">Add</button>
       </div>
     </form>
   </div>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCdEKGC5afmsWqAr3lUJtVgavRvR7DoYXU",
+      authDomain: "mix-projects-9aa5c.firebaseapp.com",
+      databaseURL: "https://mix-projects-9aa5c.firebaseio.com",
+      projectId: "mix-projects-9aa5c",
+      storageBucket: "mix-projects-9aa5c.appspot.com",
+      messagingSenderId: "176028831083",
+      appId: "1:176028831083:web:020cd720b6c99c23c3d02e"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
   <script src="/js/app.js"></script>
+  <script src="/js/db.js"></script>
   <script src="/js/ui.js"></script>
 </body>
 </html>
